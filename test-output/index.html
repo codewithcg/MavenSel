@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\chandangupta\Desktop\JavaAutoframework\autoframeworkdemo\testng.xml</span>
+                    <span>C:\Users\chandangupta\Desktop\JenkinsIntegration\autoframeworkdemo\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.orangehr.tests.TestDemo" class="method navigator-link" hash-for-method="test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})">test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,7 +104,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.orangehr.tests.TestDemo" class="method navigator-link" hash-for-method="test01(TestUser)">test01(TestUser)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.orangehr.tests.TestDemo" class="method navigator-link" hash-for-method="test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})">test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.orangehr.tests.TestDemo" class="method navigator-link" hash-for-method="test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})">test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.orangehr.tests.TestDemo" class="method navigator-link" hash-for-method="test02(TestUser)">test02(TestUser)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,50 +139,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.orangehr.tests.TestDemo</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})">
-                  </a> <!-- test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01}) -->
-                  <span class="method-name">test01</span>
-                  <span class="parameters">({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=95.0.4638.54)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;INDP277LT&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\CHANDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59153}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f0bca4dd116336034a18107f0ee0c0d7
-*** Element info: {Using=id, value=txtUsername}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.cwg.actions.Finder.findElement(Finder.java:11)
-	at com.cwg.actions.SeleniumActions.enterText(SeleniumActions.java:22)
-	at com.cwg.pages.LoginPage.EnterUsername(LoginPage.java:12)
-	at com.orangehr.tests.TestDemo.test01(TestDemo.java:16)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -190,10 +147,34 @@ Session ID: f0bca4dd116336034a18107f0ee0c0d7
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="test01(TestUser)">
+                  </a> <!-- test01(TestUser) -->
+                  <span class="method-name">test01</span>
+                  <span class="parameters">(TestUser)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})">
                   </a> <!-- test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01}) -->
                   <span class="method-name">test01</span>
                   <span class="parameters">({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})">
+                  </a> <!-- test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01}) -->
+                  <span class="method-name">test01</span>
+                  <span class="parameters">({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test02(TestUser)">
+                  </a> <!-- test02(TestUser) -->
+                  <span class="method-name">test02</span>
+                  <span class="parameters">(TestUser)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -209,7 +190,7 @@ Session ID: f0bca4dd116336034a18107f0ee0c0d7
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\chandangupta\Desktop\JavaAutoframework\autoframeworkdemo\testng.xml</span>
+            <span class="header-content">C:\Users\chandangupta\Desktop\JenkinsIntegration\autoframeworkdemo\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,24 +239,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test02')
 data.setCell(0, 2, 'com.orangehr.tests.TestDemo')
-data.setCell(0, 3, 375);
+data.setCell(0, 3, 1075);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test01')
+data.setCell(1, 1, 'test02')
 data.setCell(1, 2, 'com.orangehr.tests.TestDemo')
-data.setCell(1, 3, 310);
+data.setCell(1, 3, 1017);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test01')
 data.setCell(2, 2, 'com.orangehr.tests.TestDemo')
-data.setCell(2, 3, 96);
+data.setCell(2, 3, 255);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test01')
+data.setCell(3, 2, 'com.orangehr.tests.TestDemo')
+data.setCell(3, 3, 236);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test01')
+data.setCell(4, 2, 'com.orangehr.tests.TestDemo')
+data.setCell(4, 3, 153);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 781 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -307,48 +296,68 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
+                <span class="method-name">initDriver(public void com.orangehr.tests.TestDemo.test01(java.lang.String) throws java.lang.Exception)</span>
+                <span class="method-start">728 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initDriver(public void com.orangehr.tests.TestDemo.test02(java.lang.String) throws java.lang.Exception)</span>
+                <span class="method-start">729 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">initDriver(public void com.orangehr.tests.TestDemo.test01(java.util.Map) throws java.lang.Exception)</span>
-                <span class="method-start">1460 ms</span>
+                <span class="method-start">2291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initDriver(public void com.orangehr.tests.TestDemo.test02(java.util.Map) throws java.lang.Exception)</span>
-                <span class="method-start">1460 ms</span>
+                <span class="method-start">2292 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test02({TestData=Username=TestUser, Execute=Yes, TestCaseName=test02})</span>
-                <span class="method-start">12474 ms</span>
+                <span class="method-start">21651 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})</span>
-                <span class="method-start">12856 ms</span>
+                <span class="method-name">test02(TestUser)</span>
+                <span class="method-start">22201 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitDriver([TestResult name=test02 status=SUCCESS method=TestDemo.test02(java.util.Map)[pri:0, instance:com.ora...)</span>
-                <span class="method-start">12864 ms</span>
+                <span class="method-start">22733 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
+                <span class="method-name">quitDriver([TestResult name=test02 status=SUCCESS method=TestDemo.test02(java.lang.String)[pri:0, instance:com....)</span>
+                <span class="method-start">23221 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test01(TestUser)</span>
+                <span class="method-start">23553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitDriver([TestResult name=test01 status=SUCCESS method=TestDemo.test01(java.lang.String)[pri:0, instance:com....)</span>
+                <span class="method-start">23810 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})</span>
+                <span class="method-start">26634 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
                 <span class="method-name">quitDriver([TestResult name=test01 status=SUCCESS method=TestDemo.test01(java.util.Map)[pri:0, instance:com.ora...)</span>
-                <span class="method-start">13168 ms</span>
+                <span class="method-start">26873 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initDriver(public void com.orangehr.tests.TestDemo.test01(java.util.Map) throws java.lang.Exception)</span>
-                <span class="method-start">14802 ms</span>
+                <span class="method-start">28534 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">test01({TestData=Username=TestUser, Execute=Yes, TestCaseName=test01})</span>
-                <span class="method-start">23230 ms</span>
+                <span class="method-start">36315 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">quitDriver([TestResult name=test01 status=FAILURE method=TestDemo.test01(java.util.Map)[pri:0, instance:com.ora...)</span>
-                <span class="method-start">23330 ms</span>
+                <span class="method-name">quitDriver([TestResult name=test01 status=SUCCESS method=TestDemo.test01(java.util.Map)[pri:0, instance:com.ora...)</span>
+                <span class="method-start">36471 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23432 ms</span>
+                <span class="method-start">37651 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

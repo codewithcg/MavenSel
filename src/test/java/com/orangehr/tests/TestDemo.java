@@ -23,13 +23,13 @@ public class TestDemo extends BaseTest {
 		Assert.assertEquals("Lakshmi", "Lakshmi");
 	}
 
-	// @Test(dataProvider = "data")
+	 @Test(dataProvider = "data")
 	public void test01(String user) throws Exception {
 		new LoginPage().EnterUsername(user);
 		Assert.assertEquals("Lakshmi", "Lakshmi");
 	}
 
-	// @Test(dataProvider = "data")
+	 @Test(dataProvider = "data")
 	public void test02(String data2) throws Exception {
 		new LoginPage().EnterUsername(data2);
 		Assert.assertEquals("Lakshmi", "Lakshmi");
@@ -37,7 +37,7 @@ public class TestDemo extends BaseTest {
 
 	@DataProvider(name = "data")
 	public Object[][] getDatalocal() {
-		return new Object[][] { { "TestUse" } };
+		return new Object[][] { { "TestUser" } };
 	}
 
 }
