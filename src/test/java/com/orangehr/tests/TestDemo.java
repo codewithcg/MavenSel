@@ -30,10 +30,16 @@ public class TestDemo extends BaseTest {
 	}
 
 	 @Test(dataProvider = "data")
-	public void test02(String data2) throws Exception {
+	public void test03(String data2) throws Exception {
 		new LoginPage().EnterUsername(data2);
 		Assert.assertEquals("Lakshmi", "Lakshmi");
 	}
+	 
+	 @Test(dataProvider = "data")
+		public void test05(String data2) throws Exception {
+			new LoginPage().EnterUsername(data2);
+			Assert.assertEquals("Lakshmi", "Lakshmi");
+		}
 
 	@DataProvider(name = "data")
 	public Object[][] getDatalocal() {
